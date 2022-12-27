@@ -96,17 +96,17 @@ class Buyer(object):
 if __name__ == '__main__':
 
     # 商品sku
-    skuId = '100015253059'
+    skuId = '100012043978'  # 茅台:100012043978
     # 区域id(可根据工程 area_id 目录查找)
-    areaId = '1_2901_55554_0'
+    areaId = '3_51042_36157'  # 静海:3_51042_36157
     # 购买数量
     skuNum = 1
     # 库存查询间隔(秒)
-    stockInterval = 3
+    stockInterval = 0.1
     # 监听库存后尝试下单次数
-    submitRetry = 3
+    submitRetry = 0.1
     # 下单尝试间隔(秒)
-    submitInterval = 5
+    submitInterval = 0.1
     # 程序开始执行时间(晚于当前时间立即执行，适用于定时抢购类)
     buyTime = '2022-10-10 00:00:00'
 
